@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sphynx Motion — A premium creative studio delivering cinematic motion design, brand film, AI-powered visuals, and strategic brand direction.">
+  <meta property="og:title" content="Sphynx Motion">
+  <meta property="og:description" content="A premium creative studio delivering cinematic motion design, brand film, AI-powered visuals, and strategic brand direction.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.sphynxmotion.com">
+  <title>Sphynx Motion</title>
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.3.1/dist/fonts/geist-sans/style.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/site-v3.css?v=20260719e">
+</head>
+<body>
+
+  <main id="main-content">
+    <!-- ── Navigation ──────────────────────────────────── -->
+    <nav class="nav" id="nav">
+      <div class="container">
+        <div class="nav__inner">
+          <a href="#hero" class="nav__logo" aria-label="Sphynx Motion home">
+            <img src="assets/images/logo.png" alt="Sphynx Motion" width="110" height="110">
+          </a>
+          <ul class="nav__links" role="list">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#team">Team</a></li>
+          </ul>
+          <a href="#contact" class="nav__cta">Get in Touch</a>
+          <button class="nav__burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile menu overlay -->
+    <div class="nav__overlay" id="navOverlay" aria-hidden="true">
+      <button class="nav__overlay-close" id="navOverlayClose" aria-label="Close menu">✕</button>
+      <ul role="list">
+        <li><a href="#services" class="nav__overlay-link">Services</a></li>
+        <li><a href="#portfolio" class="nav__overlay-link">Portfolio</a></li>
+        <li><a href="#about" class="nav__overlay-link">About</a></li>
+        <li><a href="#team" class="nav__overlay-link">Team</a></li>
+        <li><a href="#contact" class="nav__overlay-link nav__overlay-cta">Get in Touch</a></li>
+      </ul>
+    </div>
+
+    <!-- ── Hero ────────────────────────────────────────── -->
+    <section class="hero" id="hero">
+
+      <!-- Full-bleed background video -->
+      <div class="hero__video-wrap">
+        <video class="hero__video" autoplay muted loop playsinline preload="auto">
+          <source src="assets/hero/hero-video-01.mp4" type="video/mp4">
+        </video>
+        <div class="hero__vignette" aria-hidden="true"></div>
+      </div>
+
+      <!-- Scroll-driven grain layer (opacity animated by GSAP) -->
+      <div class="hero__grain-layer" id="heroGrain" aria-hidden="true"></div>
+
+      <!-- Text content — always visible above the fold -->
+      <div class="hero__content">
+        <p class="hero__eyebrow" id="heroEyebrow">Creative Motion Studio</p>
+        <h1 class="hero__headline" id="heroHeadline" aria-label="We Make Motion Matter">
+          <span class="hero__word" data-word="We">We</span>
+          <span class="hero__word" data-word="Make">Make</span>
+          <br>
+          <em class="hero__word hero__word--em" data-word="Motion">Motion</em>
+          <br>
+          <span class="hero__word" data-word="Matter.">Matter.</span>
+        </h1>
+        <p class="hero__sub" id="heroSub">
+          Where strategy meets cinema. We build visual worlds through motion, film, AI, and design — for brands that refuse to be ignored.
+        </p>
+        <div class="hero__actions">
+          <a href="#portfolio" class="btn-primary">View Our Work</a>
+          <a href="#contact" class="btn-ghost">Start a Project</a>
+        </div>
+      </div>
+
+      <!-- Stats — lower right -->
+      <div class="hero__stats">
+        <div class="hero__stat"><span class="hero__stat-num">220+</span><span class="hero__stat-label">Projects</span></div>
+        <div class="hero__stat"><span class="hero__stat-num">17+</span><span class="hero__stat-label">Years</span></div>
+        <div class="hero__stat"><span class="hero__stat-num">150+</span><span class="hero__stat-label">Clients</span></div>
+      </div>
+
+      <!-- Scroll cue -->
+      <div class="hero__scroll-cue" aria-hidden="true">
+        <div class="hero__scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+
+    </section>
+
+    <!-- ── Services ─────────────────────────────────────── -->
+<section class="services" id="services">
+  <div class="svc container">
+    <div class="svc__menu">
+      <p class="section-eyebrow">What We Do</p>
+      <h2 class="section-title">Our<br><em>Disciplines</em></h2>
+      <ul class="svc__list" role="list">
+        <li><button class="svc__link is-active" data-svc="0">Digital Design<span class="svc__arrow" aria-hidden="true">→</span></button></li>
+        <li><button class="svc__link" data-svc="1">Video Production<span class="svc__arrow" aria-hidden="true">→</span></button></li>
+        <li><button class="svc__link" data-svc="2">AI Creation<span class="svc__arrow" aria-hidden="true">→</span></button></li>
+        <li><button class="svc__link" data-svc="3">Brand Consultation<span class="svc__arrow" aria-hidden="true">→</span></button></li>
+      </ul>
+      <p class="svc__subhead">Studio Capabilities</p>
+      <ul class="svc__sublist" role="list">
+        <li>Motion Graphics</li>
+        <li>Cinematography</li>
+        <li>Colour Grading</li>
+        <li>Post-Production</li>
+        <li>Sound Design</li>
+        <li>AI Pipelines</li>
+      </ul>
+    </div>
+    <div class="svc__stage">
+
+      <div class="svc__slide is-active">
+        <video muted loop playsinline preload="none" poster="assets/disciplines/discipline-digital-design.jpg">
+          <source src="assets/disciplines/discipline-digital-design.mp4" type="video/mp4">
+        </video>
+        <div class="svc__info">
+          <p class="svc__num">01</p>
+          <h3 class="svc__name">Digital Design</h3>
+          <p class="svc__desc">Strategy-led visual systems built to last. We craft brand ecosystems — identity, typography, colour, UX. Every element earns its place and every touchpoint tells the same story.</p>
+          <a href="#contact" class="services__link">Start a project →</a>
+        </div>
+      </div>
+
+      <div class="svc__slide">
+        <video muted loop playsinline preload="none" poster="assets/disciplines/discipline-video-production.jpg">
+          <source src="assets/disciplines/discipline-video-production.mp4" type="video/mp4">
+        </video>
+        <div class="svc__info">
+          <p class="svc__num">02</p>
+          <h3 class="svc__name">Video Production</h3>
+          <p class="svc__desc">From concept to final cut, we execute with cinematic precision. Branded storytelling, commercial content, and campaign films made to perform at every format and frame rate.</p>
+          <a href="#contact" class="services__link">Start a project →</a>
+        </div>
+      </div>
+
+      <div class="svc__slide">
+        <video muted loop playsinline preload="none" poster="assets/disciplines/discipline-ai-creation.jpg">
+          <source src="assets/disciplines/discipline-ai-creation.mp4" type="video/mp4">
+        </video>
+        <div class="svc__info">
+          <p class="svc__num">03</p>
+          <h3 class="svc__name">AI Creation</h3>
+          <p class="svc__desc">The frontier of visual production. We harness AI-powered workflows to generate next-generation content — rapid ideation, synthetic visuals, and generative worlds at studio quality.</p>
+          <a href="#contact" class="services__link">Start a project →</a>
+        </div>
+      </div>
+
+      <div class="svc__slide">
+        <video muted loop playsinline preload="none" poster="assets/disciplines/discipline-brand-consultation.jpg">
+          <source src="assets/disciplines/discipline-brand-consultation.mp4" type="video/mp4">
+        </video>
+        <div class="svc__info">
+          <p class="svc__num">04</p>
+          <h3 class="svc__name">Brand Consultation</h3>
+          <p class="svc__desc">Clarity before creativity. We help brands find their position, sharpen their narrative, and build the creative direction that cuts through. Every campaign lands with authority.</p>
+          <a href="#contact" class="services__link">Start a project →</a>
+        </div>
+      </div>
+
+    </div><!-- /.svc__stage -->
+  </div><!-- /.svc -->
+</section>
+
+<!-- ── AI Edge ──────────────────────────────────────── -->
+<section class="ai-edge" id="about">
+  <div class="container">
+    <div class="ai-edge__header">
+      <p class="section-eyebrow">The AI Edge</p>
+      <h2 class="ai-edge__headline">Studio-quality output.<br><em>A fraction of the timeline.</em></h2>
+      <p class="ai-edge__sub">We integrate AI into every stage of production — not as a shortcut, but as a force multiplier. The result: faster concepts, richer worlds, and budgets your CFO will approve.</p>
+    </div>
+
+    <div class="ai-edge__cta">
+      <a href="#contact" class="btn-primary">See How We Work</a>
+    </div>
+  </div>
+</section>
+
+    <!-- ── Portfolio ───────────────────────────────────── -->
+<section class="portfolio" id="portfolio">
+  <div class="container">
+    <div class="portfolio__header portfolio__header--row">
+      <div>
+        <p class="section-eyebrow">Selected Work</p>
+        <h2 class="section-title">The Reel</h2>
+      </div>
+      <div class="reel-nav" aria-label="Project navigation">
+        <button class="reel-nav__btn" id="reelPrev" aria-label="Previous projects">←</button>
+        <button class="reel-nav__btn" id="reelNext" aria-label="Next projects">→</button>
+        <div class="reel-nav__dots" id="reelDots"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured showreel -->
+  <div class="container">
+    <div class="showreel" id="showreel">
+      <video id="reelVideo" muted loop playsinline preload="none"
+             poster="assets/reel/showreel-poster.jpg"
+             data-src="assets/reel/showreel.mp4"
+             aria-label="SPHYNX MOTION showreel"></video>
+      <button class="showreel__sound" id="showreelSound" aria-label="Unmute showreel">Unmute</button>
+    </div>
+  </div>
+
+  <!-- Project gallery (desktop) -->
+  <div class="container">
+    <div class="portfolio__gallery" id="reelGallery"></div>
+  </div>
+
+  <!-- Data source for gallery + mobile grid (hidden) -->
+  <div class="portfolio__track-wrap" id="portfolioTrackWrap">
+    <div class="portfolio__track" id="portfolioTrack">
+
+      <div class="portfolio__item" tabindex="0" role="button" aria-label="View project: The New Order" data-title="The New Order" data-cat="VFX"
+           data-video="assets/reel/reel-01.mp4" data-poster="assets/reel/reel-01-poster.jpg"
+           data-desc="Cinematic world-building for a flagship VFX production.">
+        <div class="portfolio__item-media">
+          <img src="assets/reel/reel-01-poster.jpg" alt="The New Order" loading="lazy">
+        </div>
+        <div class="portfolio__item-meta">
+          <span class="portfolio__item-cat">VFX</span>
+          <h3 class="portfolio__item-title">The New Order</h3>
+        </div>
+      </div>
+
+      <div class="portfolio__item" tabindex="0" role="button" aria-label="View project: Behind The Door — Ep.01" data-title="Behind The Door — Ep.01" data-cat="Brand Film"
+           data-video="assets/reel/reel-02.mp4" data-poster="assets/reel/reel-02-poster.jpg"
+           data-desc="A six-part narrative brand film series.">
+        <div class="portfolio__item-media">
+          <img src="assets/reel/reel-02-poster.jpg" alt="Behind The Door" loading="lazy">
+        </div>
+        <div class="portfolio__item-meta">
+          <span class="portfolio__item-cat">Brand Film</span>
+          <h3 class="portfolio__item-title">Behind The Door — Ep.01</h3>
+        </div>
+      </div>
+
+      <div class="portfolio__item" tabindex="0" role="button" aria-label="View project: Campaign Reel" data-title="Campaign Reel" data-cat="Video Production"
+           data-video="assets/reel/reel-03.mp4" data-poster="assets/reel/reel-03-poster.jpg"
+           data-desc="Full-scale production for a global brand campaign.">
+        <div class="portfolio__item-media">
+          <img src="assets/reel/reel-03-poster.jpg" alt="Campaign Reel" loading="lazy">
+        </div>
+        <div class="portfolio__item-meta">
+          <span class="portfolio__item-cat">Video Production</span>
+          <h3 class="portfolio__item-title">Campaign Reel</h3>
+        </div>
+      </div>
+
+      <div class="portfolio__item" tabindex="0" role="button" aria-label="View project: Synthetic Vision" data-title="Synthetic Vision" data-cat="AI Creation"
+           data-video="assets/reel/reel-04.mp4" data-poster="assets/reel/reel-04-poster.jpg"
+           data-desc="AI-generated visual world for a next-gen brand.">
+        <div class="portfolio__item-media">
+          <img src="assets/reel/reel-04-poster.jpg" alt="Synthetic Vision" loading="lazy">
+        </div>
+        <div class="portfolio__item-meta">
+          <span class="portfolio__item-cat">AI Creation</span>
+          <h3 class="portfolio__item-title">Synthetic Vision</h3>
+        </div>
+      </div>
+
+      <div class="portfolio__item" tabindex="0" role="button" aria-label="View project: World State" data-title="World State" data-cat="AI Creation"
+           data-video="assets/reel/reel-05.mp4" data-poster="assets/reel/reel-05-poster.jpg"
+           data-desc="Generative environments at studio quality.">
+        <div class="portfolio__item-media">
+          <img src="assets/reel/reel-05-poster.jpg" alt="World State" loading="lazy">
+        </div>
+        <div class="portfolio__item-meta">
+          <span class="portfolio__item-cat">AI Creation</span>
+          <h3 class="portfolio__item-title">World State</h3>
+        </div>
+      </div>
+
+      <div class="portfolio__item" tabindex="0" role="button" aria-label="View project: Form Study 03" data-title="Form Study 03" data-cat="Digital Design"
+           data-video="assets/reel/reel-06.mp4" data-poster="assets/reel/reel-06-poster.jpg"
+           data-desc="A typographic motion study in three movements.">
+        <div class="portfolio__item-media">
+          <img src="assets/reel/reel-06-poster.jpg" alt="Form Study 03" loading="lazy">
+        </div>
+        <div class="portfolio__item-meta">
+          <span class="portfolio__item-cat">Digital Design</span>
+          <h3 class="portfolio__item-title">Form Study 03</h3>
+        </div>
+      </div>
+
+    </div><!-- /.portfolio__track -->
+  </div>
+
+  <!-- Mobile: vertical grid (populated by JS) -->
+  <div class="portfolio__grid container"></div>
+
+</section>
+
+<!-- Project detail overlay -->
+<div class="project-overlay" id="projectOverlay" aria-hidden="true" role="dialog" aria-modal="true">
+  <button class="project-overlay__close" id="projectOverlayClose" aria-label="Close project">✕</button>
+  <video class="project-overlay__video" id="projectOverlayVideo" muted loop playsinline preload="none"></video>
+  <div class="project-overlay__info">
+    <span class="project-overlay__cat" id="projectOverlayCat"></span>
+    <h2 class="project-overlay__title" id="projectOverlayTitle"></h2>
+    <p class="project-overlay__desc" id="projectOverlayDesc"></p>
+    <a href="#contact" class="btn-ghost project-overlay__cta" id="projectOverlayCta">Start a similar project</a>
+  </div>
+</div>
+
+<!-- ── Team ─────────────────────────────────────────── -->
+<section class="team" id="team">
+  <div class="container">
+    <p class="section-eyebrow">The Studio</p>
+    <h2 class="section-title">The People<br><em>Behind the Frame</em></h2>
+
+    <div class="team__grid">
+
+      <div class="team__member">
+        <div class="team__photo">
+          <img src="assets/team/larochelle-smit.png" alt="Larochelle Smit" loading="lazy">
+        </div>
+        <div class="team__info">
+          <p class="team__eyebrow">Co-Founder</p>
+          <h3 class="team__name">Larochelle Smit</h3>
+          <p class="team__bio">Larochelle Smit brings structure, strategic clarity, and operational strength to the foundation of Sphynx Motion, helping shape the studio's growth, delivery standards, and client experience with a disciplined and forward-thinking approach.</p>
+          <a href="#contact" class="team__link">View Profile →</a>
+        </div>
+      </div>
+
+      <div class="team__member">
+        <div class="team__photo">
+          <img src="assets/team/davies-bassey.jpg" alt="Davies Bassey" loading="lazy">
+        </div>
+        <div class="team__info">
+          <p class="team__eyebrow">Co-Founder</p>
+          <h3 class="team__name">Davies Bassey</h3>
+          <p class="team__bio">Davies Bassey is a multidisciplinary Creative Director and AI-driven filmmaker shaping how stories are told across film, motion, design, and emerging visual technologies. He brings cinematic thinking, sharp visual strategy, and future-facing execution to every brand and production experience.</p>
+          <a href="#contact" class="team__link">View Profile →</a>
+        </div>
+      </div>
+
+      <div class="team__member">
+        <div class="team__photo">
+          <img src="assets/team/tebogo-thobejane.png" alt="Tebogo Thobejane" loading="lazy">
+        </div>
+        <div class="team__info">
+          <p class="team__eyebrow">Business Developer</p>
+          <h3 class="team__name">Tebogo Thobejane</h3>
+          <p class="team__bio">Tebogo Thobejane brings cultural intelligence, entrepreneurial instinct, and deep-rooted Johannesburg market knowledge to Sphynx Motion. She drives strategic partnerships and brand relationships, connecting the studio's cinematic vision to the audiences and opportunities that amplify it.</p>
+          <a href="#contact" class="team__link">View Profile →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Contact ──────────────────────────────────────── -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact__inner">
+      <div class="contact__left">
+        <p class="section-eyebrow">Let's Work</p>
+        <h2 class="contact__headline">Ready to Make<br><em>Something Matter?</em></h2>
+        <p class="contact__sub">Tell us about your project. We'll respond within 24 hours.</p>
+        <div class="contact__details">
+          <p><a href="/cdn-cgi/l/email-protection#7018151c1c1f30030018091e081d1f04191f1e5e131f1d"><span class="__cf_email__" data-cfemail="036b666f6f6c4370736b7a6d7b6e6c776a6c6d2d606c6e">[email&#160;protected]</span></a></p>
+          <p>Johannesburg, South Africa</p>
+        </div>
+      </div>
+      <form class="contact__form" id="contactForm" novalidate>
+        <!-- Honeypot — hidden from humans, catches bots -->
+        <div style="position:absolute;left:-9999px;top:-9999px" aria-hidden="true">
+          <label for="contactWebsite">Website</label>
+          <input type="text" id="contactWebsite" name="website" tabindex="-1" autocomplete="off">
+        </div>
+        <div class="contact__field">
+          <label for="contactName">Name</label>
+          <input type="text" id="contactName" name="name" placeholder="Your name" required autocomplete="name">
+        </div>
+        <div class="contact__field">
+          <label for="contactEmail">Email</label>
+          <input type="email" id="contactEmail" name="email" placeholder="your@email.com" required autocomplete="email">
+        </div>
+        <div class="contact__field">
+          <label for="contactPhone">Phone</label>
+          <input type="tel" id="contactPhone" name="phone" placeholder="+27 00 000 0000" autocomplete="tel">
+        </div>
+        <div class="contact__field">
+          <label for="contactType">Project Type</label>
+          <select id="contactType" name="project_type">
+            <option value="">Select a service</option>
+            <option value="digital-design">Digital Design</option>
+            <option value="video-production">Video Production</option>
+            <option value="ai-creation">AI Creation</option>
+            <option value="brand-consultation">Brand Consultation</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="contact__field">
+          <label for="contactMessage">Message</label>
+          <textarea id="contactMessage" name="message" placeholder="Tell us about your project..." rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary contact__submit">Send It</button>
+        <p class="contact__error" id="contactError" hidden></p>
+      </form>
+      <div class="contact__success" id="contactSuccess" hidden>
+        <div class="contact__success-check" aria-hidden="true">✓</div>
+        <h3>Thank you — your message is in.</h3>
+        <p>We'll get back to you within 24 hours. A confirmation email is on its way to your inbox.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <p class="footer__copy">© 2026 Sphynx Motion. All rights reserved.</p>
+      <p class="footer__location">Johannesburg, South Africa</p>
+    </div>
+  </div>
+</footer>
+
+  </main>
+
+  <!-- GSAP -->
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script>
+    // Nav + burger — runs immediately on DOMContentLoaded (does NOT wait for video)
+    document.addEventListener('DOMContentLoaded', () => {
+      const nav = document.getElementById('nav');
+      const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 20);
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      const burger = document.getElementById('navBurger');
+      const overlay = document.getElementById('navOverlay');
+      const overlayClose = document.getElementById('navOverlayClose');
+      const openMenu = () => {
+        overlay.classList.add('is-open');
+        overlay.setAttribute('aria-hidden', 'false');
+        burger.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+      };
+      const closeMenu = () => {
+        overlay.classList.remove('is-open');
+        overlay.setAttribute('aria-hidden', 'true');
+        burger.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      };
+      burger.addEventListener('click', openMenu);
+      overlayClose.addEventListener('click', closeMenu);
+      overlay.querySelectorAll('.nav__overlay-link').forEach(l => l.addEventListener('click', closeMenu));
+      document.addEventListener('keydown', e => {
+        if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeMenu();
+      });
+    });
+
+    window.addEventListener('load', () => {
+      if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+        gsap.registerPlugin(ScrollTrigger);
+      }
+
+      // Services: play video when panel is active (desktop only)
+      if (window.innerWidth > 768 && typeof ScrollTrigger !== 'undefined') {
+        document.querySelectorAll('.services__panel').forEach(panel => {
+          const video = panel.querySelector('video');
+          if (!video) return;
+
+          ScrollTrigger.create({
+            trigger: panel,
+            start: 'top 60%',
+            end: 'bottom 40%',
+            onEnter: () => { video.play(); },
+            onLeave: () => { video.pause(); },
+            onEnterBack: () => { video.play(); },
+            onLeaveBack: () => { video.pause(); }
+          });
+
+          const title = panel.querySelector('.services__title');
+          const desc = panel.querySelector('.services__desc');
+          const link = panel.querySelector('.services__link');
+
+          gsap.fromTo([title, desc, link],
+            { x: 40, opacity: 0 },
+            {
+              x: 0, opacity: 1,
+              stagger: 0.1,
+              duration: 0.7,
+              ease: 'power2.out',
+              scrollTrigger: {
+                trigger: panel,
+                start: 'top 70%',
+                toggleActions: 'play none none reverse'
+              }
+            }
+          );
+        });
+      }
+
+      // AI edge proof items reveal on scroll
+      document.querySelectorAll('.ai-edge__proof-item').forEach((item, i) => {
+        gsap.fromTo(item,
+          { y: 40, opacity: 0 },
+          {
+            y: 0, opacity: 1,
+            duration: 0.7,
+            delay: i * 0.12,
+            ease: 'power2.out',
+            scrollTrigger: {
+              trigger: item,
+              start: 'top 80%',
+              toggleActions: 'play none none none'
+            }
+          }
+        );
+      });
+
+      // Reel: lazy-load src then play/pause on viewport entry
+      const reelVideo = document.getElementById('reelVideo');
+      if (reelVideo) {
+        const reelObserver = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              if (reelVideo.dataset.src && !reelVideo.src) {
+                reelVideo.src = reelVideo.dataset.src;
+                reelVideo.load();
+              }
+              reelVideo.play().catch(() => {});
+            } else {
+              reelVideo.pause();
+            }
+          });
+        }, { threshold: 0.3 });
+        reelObserver.observe(reelVideo);
+
+        // Showreel sound toggle
+        const showreelSound = document.getElementById('showreelSound');
+        if (showreelSound) {
+          showreelSound.addEventListener('click', () => {
+            reelVideo.muted = !reelVideo.muted;
+            showreelSound.textContent = reelVideo.muted ? 'Unmute' : 'Mute';
+            showreelSound.setAttribute('aria-label', reelVideo.muted ? 'Unmute showreel' : 'Mute showreel');
+            showreelSound.classList.toggle('is-on', !reelVideo.muted);
+          });
+        }
+      }
+
+      // Portfolio: build mobile grid + wire click→overlay for all desktop items
+      const desktopItems = document.querySelectorAll('#portfolioTrack .portfolio__item');
+      const mobileGrid = document.querySelector('.portfolio__grid');
+      const overlay = document.getElementById('projectOverlay');
+      const overlayVideo = document.getElementById('projectOverlayVideo');
+      const overlayClose = document.getElementById('projectOverlayClose');
+      const overlayCat = document.getElementById('projectOverlayCat');
+      const overlayTitle = document.getElementById('projectOverlayTitle');
+      const overlayDesc = document.getElementById('projectOverlayDesc');
+
+      if (mobileGrid) {
+        desktopItems.forEach(item => {
+          const card = document.createElement('div');
+          card.className = 'portfolio__item';
+          card.tabIndex = 0;
+          card.setAttribute('role', 'button');
+          card.setAttribute('aria-label', `View project: ${item.dataset.title}`);
+          ['title','cat','video','poster','desc'].forEach(k => card.dataset[k] = item.dataset[k]);
+
+          const media = document.createElement('div');
+          media.className = 'portfolio__item-media';
+          const img = document.createElement('img');
+          img.src = item.dataset.poster;
+          img.alt = item.dataset.title;
+          img.loading = 'lazy';
+          media.appendChild(img);
+
+          const meta = document.createElement('div');
+          meta.className = 'portfolio__item-meta';
+          const cat = document.createElement('span');
+          cat.className = 'portfolio__item-cat';
+          cat.textContent = item.dataset.cat;
+          const title = document.createElement('h3');
+          title.className = 'portfolio__item-title';
+          title.textContent = item.dataset.title;
+          meta.appendChild(cat);
+          meta.appendChild(title);
+
+          card.appendChild(media);
+          card.appendChild(meta);
+          mobileGrid.appendChild(card);
+        });
+      }
+
+      // The Reel: featured gallery with pagination (desktop)
+      const gallery = document.getElementById('reelGallery');
+      const reelPrev = document.getElementById('reelPrev');
+      const reelNext = document.getElementById('reelNext');
+      const reelDots = document.getElementById('reelDots');
+      if (gallery && desktopItems.length) {
+        const perPage = 3;
+        const pageCount = Math.ceil(desktopItems.length / perPage);
+        const pagesEl = [];
+        let page = 0;
+
+        const makeCard = (src, featured) => {
+          const card = document.createElement('div');
+          card.className = 'portfolio__item gallery-card' + (featured ? ' gallery-card--featured' : '');
+          card.tabIndex = 0;
+          card.setAttribute('role', 'button');
+          card.setAttribute('aria-label', `View project: ${src.dataset.title}`);
+          ['title','cat','video','poster','desc'].forEach(k => card.dataset[k] = src.dataset[k]);
+
+          const img = document.createElement('img');
+          img.src = src.dataset.poster;
+          img.alt = src.dataset.title;
+          img.loading = 'lazy';
+
+          const play = document.createElement('span');
+          play.className = 'gallery-card__play';
+          play.setAttribute('aria-hidden', 'true');
+          play.textContent = '▶';
+
+          const meta = document.createElement('div');
+          meta.className = 'gallery-card__meta';
+          const h = document.createElement('h3');
+          h.textContent = src.dataset.title;
+          const p = document.createElement('p');
+          p.textContent = src.dataset.cat;
+          meta.appendChild(h);
+          meta.appendChild(p);
+
+          card.appendChild(img);
+          card.appendChild(play);
+          card.appendChild(meta);
+          return card;
+        };
+
+        for (let p = 0; p < pageCount; p++) {
+          const pg = document.createElement('div');
+          pg.className = 'portfolio__page' + (p === 0 ? ' is-active' : '');
+          [...desktopItems].slice(p * perPage, p * perPage + perPage)
+            .forEach((it, i) => pg.appendChild(makeCard(it, i === 0)));
+          gallery.appendChild(pg);
+          pagesEl.push(pg);
+
+          const dot = document.createElement('button');
+          dot.className = 'reel-nav__dot' + (p === 0 ? ' is-active' : '');
+          dot.setAttribute('aria-label', `Go to page ${p + 1}`);
+          dot.addEventListener('click', () => goPage(p));
+          reelDots.appendChild(dot);
+        }
+
+        const goPage = (p) => {
+          page = (p + pageCount) % pageCount;
+          pagesEl.forEach((el, i) => el.classList.toggle('is-active', i === page));
+          [...reelDots.children].forEach((d, i) => d.classList.toggle('is-active', i === page));
+        };
+        reelPrev.addEventListener('click', () => goPage(page - 1));
+        reelNext.addEventListener('click', () => goPage(page + 1));
+      }
+
+      // Services: menu-driven preview stage
+      const svcLinks = document.querySelectorAll('.svc__link');
+      const svcSlides = document.querySelectorAll('.svc__slide');
+      if (svcLinks.length && svcSlides.length) {
+        const activateSvc = (i) => {
+          svcLinks.forEach((l, n) => l.classList.toggle('is-active', n === i));
+          svcSlides.forEach((s, n) => {
+            const on = n === i;
+            s.classList.toggle('is-active', on);
+            const v = s.querySelector('video');
+            if (v) { if (on) { v.play().catch(() => {}); } else { v.pause(); } }
+          });
+        };
+        svcLinks.forEach((l, i) => {
+          l.addEventListener('mouseenter', () => activateSvc(i));
+          l.addEventListener('focus', () => activateSvc(i));
+          l.addEventListener('click', () => activateSvc(i));
+        });
+        activateSvc(0);
+      }
+
+      let overlayOpener = null;
+      const openOverlay = (item) => {
+        overlayOpener = document.activeElement;
+        overlayCat.textContent = item.dataset.cat;
+        overlayTitle.textContent = item.dataset.title;
+        overlayDesc.textContent = item.dataset.desc;
+        overlayVideo.poster = item.dataset.poster;
+        overlayVideo.src = item.dataset.video;
+        overlayVideo.load();
+        overlayVideo.play().catch(() => {});
+        overlay.classList.add('is-open');
+        overlay.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+        overlayClose.focus();
+      };
+      const closeOverlay = () => {
+        overlay.classList.remove('is-open');
+        overlay.setAttribute('aria-hidden', 'true');
+        overlayVideo.pause();
+        overlayVideo.src = '';
+        document.body.style.overflow = '';
+        if (overlayOpener) { overlayOpener.focus(); overlayOpener = null; }
+      };
+
+      document.querySelectorAll('.portfolio__item').forEach(item => {
+        item.addEventListener('click', () => openOverlay(item));
+        item.addEventListener('keydown', e => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            openOverlay(item);
+          }
+        });
+      });
+      overlayClose.addEventListener('click', closeOverlay);
+      document.addEventListener('keydown', e => {
+        if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeOverlay();
+      });
+
+      // Focus trap for project overlay
+      overlay.addEventListener('keydown', e => {
+        if (!overlay.classList.contains('is-open')) return;
+        const focusable = overlay.querySelectorAll('button, a, input, select, textarea, [tabindex]:not([tabindex="-1"])');
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (e.key === 'Tab') {
+          if (e.shiftKey ? document.activeElement === first : document.activeElement === last) {
+            e.preventDefault();
+            (e.shiftKey ? last : first).focus();
+          }
+        }
+      });
+
+      // Reveal-up scroll animation (used by team section)
+      const revealEls = document.querySelectorAll('.reveal-up');
+      const revealObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-revealed');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      revealEls.forEach(el => revealObserver.observe(el));
+
+      // Contact form submission
+      const contactForm = document.getElementById('contactForm');
+      const contactSuccess = document.getElementById('contactSuccess');
+      const contactError = document.getElementById('contactError');
+      if (contactForm) {
+        const showError = (msg) => {
+          contactError.textContent = msg;
+          contactError.hidden = false;
+          contactError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        };
+        contactForm.addEventListener('submit', async e => {
+          e.preventDefault();
+          const btn = contactForm.querySelector('.contact__submit');
+          btn.textContent = 'Sending…';
+          btn.disabled = true;
+          contactError.hidden = true;
+
+          const data = Object.fromEntries(new FormData(contactForm));
+
+          try {
+            const res = await fetch('contact.php', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(data)
+            });
+            if (res.ok) {
+              contactForm.style.opacity = '0';
+              contactForm.style.transition = 'opacity 0.4s';
+              setTimeout(() => {
+                contactForm.style.display = 'none';
+                contactForm.hidden = true;
+                contactSuccess.hidden = false;
+                contactSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                // Return to a fresh form after 6 seconds
+                setTimeout(() => {
+                  contactSuccess.hidden = true;
+                  contactForm.reset();
+                  btn.textContent = 'Send It';
+                  btn.disabled = false;
+                  contactForm.hidden = false;
+                  contactForm.style.display = '';
+                  contactForm.style.opacity = '1';
+                }, 6000);
+              }, 400);
+            } else {
+              btn.textContent = 'Send It';
+              btn.disabled = false;
+              let msg = 'Something went wrong. Please email us directly at hello@sphynxmotion.com';
+              try { const j = await res.json(); if (j && j.error) msg = j.error; } catch {}
+              showError(msg);
+            }
+          } catch {
+            btn.textContent = 'Send It';
+            btn.disabled = false;
+            showError('Something went wrong. Please email us directly at hello@sphynxmotion.com');
+          }
+        });
+      }
+
+      // Hero scroll-driven grain + word shimmer (desktop only)
+      if (window.innerWidth > 768 && typeof ScrollTrigger !== 'undefined') {
+        const heroGrain = document.getElementById('heroGrain');
+        const heroWords = document.querySelectorAll('.hero__word');
+
+        // Grain intensifies on scroll
+        gsap.to(heroGrain, {
+          opacity: 0.18,
+          scrollTrigger: {
+            trigger: '.hero',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: 1
+          }
+        });
+
+        // Words re-animate on scroll entry
+        heroWords.forEach((word, i) => {
+          gsap.fromTo(word,
+            { filter: 'blur(6px)', opacity: 0.4, y: 12 },
+            {
+              filter: 'blur(0px)', opacity: 1, y: 0,
+              duration: 0.8,
+              delay: i * 0.08,
+              ease: 'power2.out',
+              scrollTrigger: {
+                trigger: '.hero',
+                start: 'top 90%',
+                toggleActions: 'play none none reverse'
+              }
+            }
+          );
+        });
+      }
+    });
+  </script>
+</body>
+</html>
