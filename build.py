@@ -148,7 +148,7 @@ BODY = f"""<div class="atmos" aria-hidden="true"><div class="glow a"></div><div 
     </div>
 
     <a class="link feature" href="https://sphynxmotion.gumroad.com" target="_blank" rel="noopener">
-      <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg></span>
+      <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1.5"/><circle cx="18" cy="21" r="1.5"/><path d="M2.5 3h2l2.4 12.4a1.5 1.5 0 0 0 1.5 1.2h8.5a1.5 1.5 0 0 0 1.5-1.2l1.4-7.4H6"/></svg></span>
       <span class="lt"><span class="k">Shop</span><span class="v">Plugins &middot; LUTs &middot; Presets</span></span>
       {CHEV}
     </a>
