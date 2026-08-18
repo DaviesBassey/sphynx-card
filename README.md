@@ -6,7 +6,7 @@ Davies Bassey A.'s digital business card. Dark cinematic design matched to sphyn
 **Also on claude.ai:** https://claude.ai/code/artifact/bb5d0929-07be-4455-a618-a42ce4dbd7e7
 
 ## Two built files (run `build.py` to regenerate both)
-- **`index.html`** — the installable PWA served by GitHub Pages. Add it to a phone's home screen and it opens full-screen like an app. Any push to `main` auto-republishes it.
+- **`index.html`** — the installable PWA served by GitHub Pages. Add it to a phone's home screen and it opens full-screen like an app. Any push to `main` auto-republishes it. A service worker (`sw.js`) keeps the installed app current: it fetches the latest card whenever the phone is online (network-first) and falls back to the cached copy offline, so edits appear on next open with no re-adding.
 - **`sphynx-card.html`** — the same card as one self-contained file (fonts, logo, photo, both QRs embedded). Works offline; this is the copy used for the claude.ai artifact.
 - **`Davies-Bassey.vcf`** — contact file, with photo. AirDrop it or email it and the recipient's phone adds you in one tap.
 

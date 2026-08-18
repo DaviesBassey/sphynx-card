@@ -227,7 +227,8 @@ head_extra = """<meta charset="utf-8">
 <meta name="apple-mobile-web-app-title" content="Sphynx">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="512x512" href="icons/icon-512.png">
-<style>html,body{background:#08080A}</style>"""
+<style>html,body{background:#08080A}</style>
+<script>if('serviceWorker' in navigator){addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(r){r.update();}).catch(function(){});});}</script>"""
 pwa = ("<!doctype html>\n<html lang=\"en\">\n<head>\n<title>Sphynx Motion Card</title>\n"
        + head_extra + "\n" + STYLE + "\n</head>\n<body>\n" + BODY + "\n</body>\n</html>\n")
 (ROOT / "index.html").write_text(pwa)
