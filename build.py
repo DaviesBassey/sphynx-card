@@ -119,7 +119,7 @@ BODY = f"""<div class="atmos" aria-hidden="true"><div class="glow a"></div><div 
   <div class="hero">
     <img class="avatar" alt="Davies Bassey A." src="data:image/jpeg;base64,{av_b64}">
     <h1 class="name">Davies Bassey A.</h1>
-    <p class="role">Cinematic Motion <span class="dot">&middot;</span> Brand Film</p>
+    <p class="role">Creative Director <span class="dot">&middot;</span> Co-Founder</p>
   </div>
 
   <div class="rule"></div>
